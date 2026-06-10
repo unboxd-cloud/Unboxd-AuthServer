@@ -1,0 +1,12 @@
+apiVersion: unboxd.cloud/v1
+kind: CloudService
+metadata:
+  name: auth
+spec:
+  runtime: container
+  tier: identity
+  ingressHost: auth.unboxd.cloud
+  public: false
+  persistentStorage: true
+  monitoring: true
+  backup: true
